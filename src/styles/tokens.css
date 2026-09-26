@@ -1,0 +1,29 @@
+/* Zatrise design tokens. Warm near-black surfaces and one accent: zat gold.
+   The same palette drives the site and the logo (scripts/build-brand.mjs). */
+:root {
+  --bg: #15130f;
+  --surface: #1e1b16;
+  --surface-2: #2b2720;
+  --line: #3e392f;
+  --line-2: #504a3e;
+  --muted: #8e8676;
+  --muted-2: #b3ab99;
+  --soft: #e9e3d5;
+  --white: #ffffff;
+
+  --gold: #f5b83d;
+  --gold-soft: #ffd88a;
+  --gold-deep: #4a3510;
+  --gold-hover: #75551a;
+
+  /* app dots in the Tools section */
+  --dot-1: #f5b83d;
+  --dot-2: #ff8a4c;
+  --dot-3: #62d6a8;
+  --dot-4: #ff5f7e;
+  --dot-5: #8fb8ff;
+
+  --glass: rgba(0, 0, 0, 0.15);
+  --glass-line: rgba(255, 255, 255, 0.15);
+  --nav-glass: rgba(21, 19, 15, 0.4);
+}
