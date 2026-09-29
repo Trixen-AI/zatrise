@@ -53,7 +53,7 @@ export default function Launches() {
 
       {launches.length === 0 ? (
         <Empty title="No launches yet" action={<Link to="/app/create" className="btn btn-primary">Launch a token</Link>}>
-          Zatrise deploys your token on Robinhood Chain and opens a fixed-price sale. The first launch will be listed here.
+          ZecPad deploys your token on Robinhood Chain and opens a fixed-price sale. The first launch will be listed here.
         </Empty>
       ) : list.length ? (
         <div className="grid gap-[16px] md:grid-cols-2 xl:grid-cols-3">

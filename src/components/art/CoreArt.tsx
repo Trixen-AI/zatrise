@@ -77,7 +77,7 @@ export function Moon({ className }: { className?: string }) {
   return <Sphere variant="meridian" className={className} />;
 }
 
-/** Gold core coin carrying the Zatrise mark. */
+/** Gold core coin carrying the ZecPad mark. */
 export function CoreCoin({ className }: { className?: string }) {
   return (
     <div className={`relative ${className ?? ''}`}>

@@ -5,7 +5,7 @@ import { PROTOCOL } from '@/lib/protocol';
 // Every product action is an EIP-712 typed request the user approves in their wallet.
 // The wallet shows each field in plain words; nothing is transferred by signing.
 
-export const DOMAIN_NAME = 'Zatrise';
+export const DOMAIN_NAME = 'ZecPad';
 export const DOMAIN_VERSION = '1';
 
 export const domain = (chainId: number) => ({ name: DOMAIN_NAME, version: DOMAIN_VERSION, chainId }) as const;
@@ -45,7 +45,7 @@ export const TYPES = {
     { name: 'proposedValue', type: 'string' },
     { name: 'rationale', type: 'string' },
   ],
-  // A team asks Zatrise to deploy its token and open a sale. The logo is bound by its keccak256 hash.
+  // A team asks ZecPad to deploy its token and open a sale. The logo is bound by its keccak256 hash.
   CreateLaunch: [
     ...base,
     { name: 'launchId', type: 'string' },
@@ -80,7 +80,7 @@ export type SignedRequest = {
 };
 
 // ------------------------------------------------------------------ store
-const KEY = 'zatrise:requests:v1';
+const KEY = 'zecpad:requests:v1';
 let cache: SignedRequest[] | null = null;
 const listeners = new Set<() => void>();
 

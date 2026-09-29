@@ -1,7 +1,7 @@
 import { useSyncExternalStore } from 'react';
 
 // Default Zcash payout address per wallet, kept in this browser only.
-const KEY = 'zatrise:payout:v1';
+const KEY = 'zecpad:payout:v1';
 const listeners = new Set<() => void>();
 let cache: Record<string, string> | null = null;
 

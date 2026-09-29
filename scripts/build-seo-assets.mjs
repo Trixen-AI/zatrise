@@ -48,7 +48,8 @@ const markSvg = (tile, ink) =>
   `<rect width="${MARK.size}" height="${MARK.size}" rx="${MARK.radius}" fill="${tile}"/>` +
   `<g fill="none" stroke="${ink}" stroke-width="${MARK.stroke}" stroke-linecap="round" stroke-linejoin="round">` +
   MARK.glyph.map((d) => `<path d="${d}"/>`).join('') +
-  `</g>`;
+  `</g>` +
+  `<circle cx="${MARK.coin.cx}" cy="${MARK.coin.cy}" r="${MARK.coin.r}" fill="${ink}"/>`;
 
 const lockup = (x, y, scale) =>
   `<g transform="translate(${x} ${y}) scale(${scale})">${markSvg(GOLD, INK)}` +
@@ -77,7 +78,7 @@ const og = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" vi
   ${text('out in ZEC', { weight: 700, size: 84, x: 76, y: 384, tracking: -0.012, fill: GOLD })}
   ${text('The first launchpad powered by a Zcash reward economy', { weight: 500, size: 28, x: 80, y: 456, fill: SOFT })}
   <rect x="80" y="518" width="1040" height="1" fill="#ffffff" fill-opacity="0.12"/>
-  ${text('zatrise.xyz', { weight: 600, size: 26, x: 80, y: 570, fill: '#fff' })}
+  ${text('zecpad.org', { weight: 600, size: 26, x: 80, y: 570, fill: '#fff' })}
   ${text('Built on Robinhood Chain', { weight: 500, size: 24, x: 820, y: 570, fill: MUTED })}
 </svg>`;
 

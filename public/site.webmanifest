@@ -1,6 +1,6 @@
 {
-  "name": "Zatrise",
-  "short_name": "Zatrise",
+  "name": "ZecPad",
+  "short_name": "ZecPad",
   "description": "The first launchpad powered by a Zcash reward economy, built on Robinhood Chain.",
   "start_url": "/app",
   "scope": "/",

@@ -130,7 +130,7 @@ export const COMMUNITY = {
     { label: 'Read the docs', word: 'Docs', glyph: 'page', href: '/docs' },
   ] as { label: string; word: string; glyph: 'stack' | 'arc' | 'drop' | 'page'; href: string }[],
   join: 'Join the community',
-  circle: ['Zatrise', 'community'],
+  circle: ['ZecPad', 'community'],
   x: { title: 'X', label: 'Follow on X' },
 };
 
@@ -167,13 +167,13 @@ export const FOOTER = {
     {
       title: 'About',
       links: [
-        { label: 'What is Zatrise', href: '/docs' },
+        { label: 'What is ZecPad', href: '/docs' },
         { label: 'How it works', href: '/docs/how-it-works' },
         { label: 'Security', href: '/docs/signatures' },
         { label: 'Contact', href: 'x', external: true },
       ],
     },
   ] as { title: string; links: NavLink[] }[],
-  copyright: '© 2026 Zatrise. All rights reserved.',
+  copyright: '© 2026 ZecPad. All rights reserved.',
 };
 

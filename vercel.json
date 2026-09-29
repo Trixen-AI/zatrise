@@ -9,8 +9,8 @@
   "redirects": [
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.zatrise.xyz" }],
-      "destination": "https://zatrise.xyz/:path*",
+      "has": [{ "type": "host", "value": "www.zecpad.org" }],
+      "destination": "https://zecpad.org/:path*",
       "permanent": true
     }
   ],

@@ -34,7 +34,7 @@ function Divider() {
   return <span className="h-[16px] w-px bg-white/15" aria-hidden />;
 }
 
-/** Pill that opens the Zatrise app. */
+/** Pill that opens the ZecPad app. */
 function LaunchAppButton() {
   return (
     <SmartLink
@@ -66,7 +66,7 @@ export function Header() {
       <div className="flex w-full flex-col py-[16px] pl-[20px] pr-[10px] sm:mx-auto lg:max-w-[1400px] lg:flex-row lg:px-[20px] lg:py-[19px]">
         <div className="relative z-20 flex w-full items-center justify-between">
           <div className="flex grow-0 basis-auto lg:basis-[420px]">
-            <a href="#top" aria-label="Zatrise home" className="flex">
+            <a href="#top" aria-label="ZecPad home" className="flex">
               <Logo height={36} className="hidden lg:block" />
               <Logo height={30} className="lg:hidden" />
             </a>

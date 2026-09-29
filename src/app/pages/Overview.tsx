@@ -33,7 +33,7 @@ export default function Overview() {
     <>
       <PageHeader
         eyebrow="Overview"
-        title={isConnected ? 'Your loop at a glance' : 'Welcome to Zatrise'}
+        title={isConnected ? 'Your loop at a glance' : 'Welcome to ZecPad'}
         actions={
           isConnected ? (
             <Link to="/app/launches" className="btn btn-primary">

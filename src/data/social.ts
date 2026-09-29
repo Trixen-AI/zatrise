@@ -5,7 +5,7 @@ import xSvg from '@/assets/social/x.svg?raw';
 export type SocialKey = 'x';
 
 export const SOCIAL: { key: SocialKey; label: string; href: string }[] = [
-  { key: 'x', label: 'X', href: 'https://x.com/Zatrise_' },
+  { key: 'x', label: 'X', href: 'https://x.com/ZecPadApp' },
 ];
 
 export const socialHref = (key: SocialKey) => SOCIAL.find((s) => s.key === key)?.href;

@@ -1,5 +1,5 @@
-// Builds the Zatrise logo from one source of truth:
-// - outlines the "zatrise" wordmark from Outfit 600 (opentype.js), so the logo never depends on a web font
+// Builds the ZecPad logo from one source of truth:
+// - outlines the "ZecPad" wordmark from Outfit 600 (opentype.js), so the logo never depends on a web font
 // - writes src/components/brand/brand-geometry.ts (used by the React components)
 // - writes public/brand/logo.svg, logo-light.svg, logo-500.png, logo-500-transparent.png and public/favicon.svg
 // Run: npm run brand
@@ -17,25 +17,27 @@ const GOLD = '#F5B83D';
 const INK = '#15130F';
 const WHITE = '#FFFFFF';
 
-// ---------- mark: a Z whose diagonal is a launch arrow (zat + rise) ----------
-// 40 x 40 grid, tile radius 10 (matches the UI's rounded cards), glyph stroke 4.2 with round joins.
+// ---------- mark: a Z built from a launch ----------
+// Bottom stroke = the pad, diagonal = the launch path, and a ZEC coin in place of the Z's top bar.
+// 40 x 40 grid, tile radius 10 (matches the UI's rounded cards), stroke 4.2 with round caps.
 const MARK = {
   size: 40,
   radius: 10,
   stroke: 4.2,
-  glyph: ['M11 11.5H28.5V20', 'M28.5 11.5L11 29', 'M11 29H29'],
+  glyph: ['M10 30H30', 'M10 30L20.4 19.6'],
+  coin: { cx: 28, cy: 12, r: 5 },
 };
 
 // ---------- wordmark ----------
 const buf = fs.readFileSync(fontFile);
 const font = opentype.parse(buf.buffer.slice(buf.byteOffset, buf.byteOffset + buf.byteLength));
-const TEXT = 'zatrise';
+const TEXT = 'ZecPad';
 const FONT_SIZE = 100;
 const TRACKING = -0.02 * FONT_SIZE; // -2% tracking
 
 let x = 0;
 const parts = [];
-// charToGlyph (not stringToGlyphs): the lowercase wordmark needs no ligatures, and it skips GSUB lookups opentype.js can't read
+// charToGlyph (not stringToGlyphs): the wordmark needs no ligatures, and it skips GSUB lookups opentype.js can't read
 const glyphs = [...TEXT].map((ch) => font.charToGlyph(ch));
 glyphs.forEach((g, i) => {
   const p = g.getPath(x, 0, FONT_SIZE);
@@ -71,7 +73,8 @@ function markSvg(tile, ink) {
     `<rect width="${MARK.size}" height="${MARK.size}" rx="${MARK.radius}" fill="${tile}"/>` +
     `<g fill="none" stroke="${ink}" stroke-width="${MARK.stroke}" stroke-linecap="round" stroke-linejoin="round">` +
     MARK.glyph.map((d) => `<path d="${d}"/>`).join('') +
-    `</g>`
+    `</g>` +
+    `<circle cx="${MARK.coin.cx}" cy="${MARK.coin.cy}" r="${MARK.coin.r}" fill="${ink}"/>`
   );
 }
 

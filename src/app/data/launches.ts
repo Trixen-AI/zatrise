@@ -1,7 +1,7 @@
 import { formatEther, formatUnits, parseEther, parseUnits } from 'viem';
 import type { SignedRequest } from '@/app/lib/requests';
 
-// Listing registry: sales Zatrise lists directly. Empty until the first approved listing.
+// Listing registry: sales ZecPad lists directly. Empty until the first approved listing.
 // Launches that teams create in the app (/app/create) are added to this list at runtime.
 
 export type Launch = {

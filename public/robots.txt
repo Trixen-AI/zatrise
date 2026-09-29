@@ -3,4 +3,4 @@ Allow: /
 Disallow: /app/activity
 Disallow: /app/wallet
 
-Sitemap: https://zatrise.xyz/sitemap.xml
+Sitemap: https://zecpad.org/sitemap.xml

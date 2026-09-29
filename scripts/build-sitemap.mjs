@@ -5,7 +5,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const SITE = 'https://zatrise.xyz';
+const SITE = 'https://zecpad.org';
 const docs = fs.readFileSync(path.join(root, 'src/docs/content.tsx'), 'utf8');
 const slugs = [...docs.matchAll(/slug: '([^']*)'/g)].map((m) => m[1]);
 

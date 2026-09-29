@@ -12,12 +12,12 @@ export const DOCS: Doc[] = [
   {
     slug: '',
     group: 'Start here',
-    title: 'What is Zatrise',
+    title: 'What is ZecPad',
     summary: 'The first launchpad powered by a Zcash reward economy, built on Robinhood Chain.',
     body: (
       <>
         <p>
-          Zatrise is a token launchpad on Robinhood Chain. Teams run fixed-price token sales, and the people who back those
+          ZecPad is a token launchpad on Robinhood Chain. Teams run fixed-price token sales, and the people who back those
           sales earn rewards paid in ZEC.
         </p>
         <p>
@@ -43,7 +43,7 @@ export const DOCS: Doc[] = [
             New here? Read <A to="/docs/how-it-works">How the reward loop works</A>, then <A to="/docs/getting-started">Getting started</A>.
           </li>
           <li>
-            Ready to act? Open the <A to="/app">Zatrise app</A>.
+            Ready to act? Open the <A to="/app">ZecPad app</A>.
           </li>
           <li>
             Running a team? See <A to="/docs/launch-a-token">Launching a token</A>.
@@ -59,7 +59,7 @@ export const DOCS: Doc[] = [
     summary: 'Launch fees fill one ZEC pool, and every epoch that pool pays the people who took part.',
     body: (
       <>
-        <p>Zatrise runs one loop, over and over:</p>
+        <p>ZecPad runs one loop, over and over:</p>
         <ol>
           <li>A team lists a fixed-price sale on zLaunch.</li>
           <li>You commit ETH to the sale while it is live.</li>
@@ -78,7 +78,7 @@ export const DOCS: Doc[] = [
         </p>
         <h2>Why ZEC</h2>
         <p>
-          Paying in ZEC gives rewards a value that does not depend on Zatrise printing anything, and it lets you choose how
+          Paying in ZEC gives rewards a value that does not depend on ZecPad printing anything, and it lets you choose how
           private your payouts are: claim to a transparent address, or to a shielded one. See <A to="/docs/claiming-zec">Claiming ZEC</A>.
         </p>
       </>
@@ -93,7 +93,7 @@ export const DOCS: Doc[] = [
       <>
         <h2>1. Add Robinhood Chain</h2>
         <p>
-          Zatrise runs on Robinhood Chain, an Ethereum layer 2 that uses ETH for gas. Most wallets add it automatically when you
+          ZecPad runs on Robinhood Chain, an Ethereum layer 2 that uses ETH for gas. Most wallets add it automatically when you
           connect, but you can also add it by hand:
         </p>
         <div className="doc-table">
@@ -131,19 +131,19 @@ export const DOCS: Doc[] = [
         </p>
         <h2>3. Connect</h2>
         <p>
-          Open the <A to="/app">app</A> and press <strong>Connect wallet</strong>. Zatrise supports browser wallets and
+          Open the <A to="/app">app</A> and press <strong>Connect wallet</strong>. ZecPad supports browser wallets and
           WalletConnect. Once connected, the app reads your real balances and history from the network you are on.
         </p>
         <Note>
-          Zatrise never asks for your seed phrase or private key. If anything that looks like Zatrise does, it is not us.
+          ZecPad never asks for your seed phrase or private key. If anything that looks like ZecPad does, it is not us.
         </Note>
       </>
     ),
   },
-  // ------------------------------------------------------------------ using zatrise
+  // ------------------------------------------------------------------ using zecpad
   {
     slug: 'launches',
-    group: 'Using Zatrise',
+    group: 'Using ZecPad',
     title: 'Committing to a launch',
     summary: 'Back a sale with ETH at a fixed price, within the per-wallet cap.',
     body: (
@@ -173,7 +173,7 @@ export const DOCS: Doc[] = [
   },
   {
     slug: 'staking',
-    group: 'Using Zatrise',
+    group: 'Using ZecPad',
     title: 'Staking in zPool',
     summary: `Stake ETH to build weight. Stakes lock for ${days(PROTOCOL.lockup)}.`,
     body: (
@@ -201,13 +201,13 @@ export const DOCS: Doc[] = [
   },
   {
     slug: 'rewards',
-    group: 'Using Zatrise',
+    group: 'Using ZecPad',
     title: 'Rewards and epochs',
     summary: `Rewards are counted in ${days(PROTOCOL.epochLength)} epochs and paid in ZEC.`,
     body: (
       <>
         <p>
-          Time in Zatrise is split into epochs of {days(PROTOCOL.epochLength)}. Epoch 0 started {genesisDate}; every epoch after
+          Time in ZecPad is split into epochs of {days(PROTOCOL.epochLength)}. Epoch 0 started {genesisDate}; every epoch after
           that starts exactly one week later.
         </p>
         <h2>What happens when an epoch closes</h2>
@@ -228,7 +228,7 @@ export const DOCS: Doc[] = [
   },
   {
     slug: 'claiming-zec',
-    group: 'Using Zatrise',
+    group: 'Using ZecPad',
     title: 'Claiming ZEC',
     summary: 'Choose a transparent or shielded Zcash address for your payout.',
     body: (
@@ -285,7 +285,7 @@ export const DOCS: Doc[] = [
   },
   {
     slug: 'governance',
-    group: 'Using Zatrise',
+    group: 'Using ZecPad',
     title: 'Governance with zVote',
     summary: 'Staked ETH is voting weight. Holders set the fee split, epoch length and listing rules.',
     body: (
@@ -315,14 +315,14 @@ export const DOCS: Doc[] = [
     slug: 'launch-a-token',
     group: 'For teams',
     title: 'Launching a token',
-    summary: 'Zatrise deploys your token on Robinhood Chain and runs your fixed-price sale.',
+    summary: 'ZecPad deploys your token on Robinhood Chain and runs your fixed-price sale.',
     body: (
       <>
         <p>
           You do not need to deploy a contract yourself. Fill in the <A to="/app/create">Launch a token</A> form, approve it in your
-          wallet, and Zatrise deploys the token and opens the sale.
+          wallet, and ZecPad deploys the token and opens the sale.
         </p>
-        <h2>What Zatrise deploys</h2>
+        <h2>What ZecPad deploys</h2>
         <ul>
           <li>A standard ERC-20 token with 18 decimals, using the name and symbol you choose</li>
           <li>The full supply is minted once: the tokens for sale are held by the sale, the rest go to your wallet</li>
@@ -413,7 +413,7 @@ export const DOCS: Doc[] = [
         <h2>What to check before you approve</h2>
         <ul>
           <li>
-            The domain reads <code>Zatrise</code>, version <code>1</code>, on the network you expect.
+            The domain reads <code>ZecPad</code>, version <code>1</code>, on the network you expect.
           </li>
           <li>The account is your own address.</li>
           <li>The amount, launch, epoch or Zcash address matches what you entered.</li>
@@ -437,7 +437,7 @@ export const DOCS: Doc[] = [
     summary: 'Short answers to common questions.',
     body: (
       <>
-        <h3>Is there a Zatrise token?</h3>
+        <h3>Is there a ZecPad token?</h3>
         <p>No. Rewards are paid in ZEC, and voting weight comes from staked ETH.</p>
         <h3>Which wallet do I need?</h3>
         <p>Any EVM wallet that supports Robinhood Chain, through a browser extension or WalletConnect.</p>
@@ -447,8 +447,8 @@ export const DOCS: Doc[] = [
         <p>Up to {bpsToPercent(PROTOCOL.walletCapBps)} of that sale's hard cap per wallet.</p>
         <h3>When can I unstake?</h3>
         <p>{days(PROTOCOL.lockup)} after your latest stake.</p>
-        <h3>Is Zatrise affiliated with Robinhood or Zcash?</h3>
-        <p>No. Zatrise is an independent project that runs on Robinhood Chain and pays rewards in ZEC.</p>
+        <h3>Is ZecPad affiliated with Robinhood or Zcash?</h3>
+        <p>No. ZecPad is an independent project that runs on Robinhood Chain and pays rewards in ZEC.</p>
       </>
     ),
   },

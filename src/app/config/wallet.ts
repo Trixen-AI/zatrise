@@ -6,7 +6,7 @@ import { http } from 'wagmi';
 export const projectId: string = import.meta.env.VITE_REOWN_PROJECT_ID ?? '';
 
 if (!projectId) {
-  console.warn('[zatrise] VITE_REOWN_PROJECT_ID is empty. Copy .env.example to .env and set your Reown project ID.');
+  console.warn('[zecpad] VITE_REOWN_PROJECT_ID is empty. Copy .env.example to .env and set your Reown project ID.');
 }
 
 export const networks: [AppKitNetwork, ...AppKitNetwork[]] = [robinhood, robinhoodTestnet];
@@ -33,7 +33,7 @@ createAppKit({
   defaultNetwork: robinhood,
   projectId,
   metadata: {
-    name: 'Zatrise',
+    name: 'ZecPad',
     description: 'The first launchpad powered by a Zcash reward economy, built on Robinhood Chain.',
     url: window.location.origin,
     icons: [`${window.location.origin}/brand/logo-500.png`],

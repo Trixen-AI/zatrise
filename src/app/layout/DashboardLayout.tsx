@@ -31,14 +31,14 @@ const NAV = [
 ];
 
 const PAGE_SEO = [
-  { path: '/app', exact: true, title: 'App', description: 'Your Zatrise overview: wallet balance, zPool stake, epoch weight and live launches on Robinhood Chain.' },
+  { path: '/app', exact: true, title: 'App', description: 'Your ZecPad overview: wallet balance, zPool stake, epoch weight and live launches on Robinhood Chain.' },
   { path: '/app/launches', title: 'Launches', description: 'Fixed-price token sales on Robinhood Chain. Commit ETH, and 5% of every raise funds the ZEC reward pool.' },
-  { path: '/app/create', title: 'Launch a token', description: 'Zatrise deploys your ERC-20 on Robinhood Chain and opens a fixed-price sale. Set the terms and upload your logo.' },
+  { path: '/app/create', title: 'Launch a token', description: 'ZecPad deploys your ERC-20 on Robinhood Chain and opens a fixed-price sale. Set the terms and upload your logo.' },
   { path: '/app/stake', title: 'zPool staking', description: "Stake ETH in zPool to build weight and earn your share of each epoch's ZEC rewards." },
   { path: '/app/rewards', title: 'ZEC rewards', description: 'Claim your epoch rewards in ZEC to a transparent or shielded Zcash address.' },
   { path: '/app/govern', title: 'Governance', description: 'Vote with your staked ETH on the fee split, epoch length and listing rules.' },
   { path: '/app/wallet', title: 'Wallet', description: 'Your balances, tokens and transactions on Robinhood Chain.' },
-  { path: '/app/activity', title: 'Activity', description: 'Every request you signed in Zatrise, verifiable against your address.' },
+  { path: '/app/activity', title: 'Activity', description: 'Every request you signed in ZecPad, verifiable against your address.' },
 ];
 
 const TEAM_NAV = [{ to: '/app/create', label: 'Launch a token', icon: IconApply }];
@@ -143,7 +143,7 @@ export function DashboardLayout() {
   return (
     <div className="min-h-screen bg-bg">
       <aside className="fixed inset-y-0 left-0 z-40 hidden w-[260px] flex-col border-r border-white/10 bg-[#18160f] px-[16px] pb-[20px] pt-[22px] lg:flex">
-        <Link to="/" aria-label="Zatrise home" className="mb-[32px] px-[10px]">
+        <Link to="/" aria-label="ZecPad home" className="mb-[32px] px-[10px]">
           <Logo height={34} />
         </Link>
         <SideNav />
@@ -162,7 +162,7 @@ export function DashboardLayout() {
               >
                 {open ? <Close /> : <Menu />}
               </button>
-              <Link to="/app" aria-label="Zatrise app">
+              <Link to="/app" aria-label="ZecPad app">
                 <Logo height={28} />
               </Link>
             </div>

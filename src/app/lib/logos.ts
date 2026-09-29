@@ -1,7 +1,7 @@
 import { useSyncExternalStore } from 'react';
 
 // Launch logos (500 x 500 images as data URLs), keyed by the keccak256 hash that the creator signed.
-const KEY = 'zatrise:logos:v1';
+const KEY = 'zecpad:logos:v1';
 const listeners = new Set<() => void>();
 let cache: Record<string, string> | null = null;
 

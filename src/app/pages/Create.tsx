@@ -122,7 +122,7 @@ export default function Create() {
   return (
     <>
       <PageHeader eyebrow="For teams" title="Launch a token">
-        Zatrise deploys your token on {chainId === 46630 ? 'Robinhood Chain Testnet' : 'Robinhood Chain'} and opens a fixed-price sale. When
+        ZecPad deploys your token on {chainId === 46630 ? 'Robinhood Chain Testnet' : 'Robinhood Chain'} and opens a fixed-price sale. When
         it closes, {bpsToPercent(PROTOCOL.feeBps)} of the raise funds the ZEC reward pool and the rest goes to your wallet.
       </PageHeader>
 
@@ -229,7 +229,7 @@ export default function Create() {
             <p className="t-body mt-[14px] text-soft">{f.tagline.trim() || 'Your one-line pitch shows here.'}</p>
           </Card>
           <Card>
-            <CardTitle>What Zatrise deploys</CardTitle>
+            <CardTitle>What ZecPad deploys</CardTitle>
             <Row label="Token">{f.tokenName.trim() || '-'} ({f.tokenSymbol || '-'})</Row>
             <Row label="Standard">ERC-20, 18 decimals</Row>
             <Row label="Minted">{supply > 0 ? fmtNumber(supply, 0) : '-'}</Row>

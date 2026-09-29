@@ -24,7 +24,7 @@ export const PROPOSALS: Proposal[] = [
     currentValue: bpsToPercent(PROTOCOL.feeBps),
     proposedValue: bpsToPercent(PROTOCOL.feeBps),
     summary:
-      'Keep the share of every raise sent to zPool at 5%. A lower cut shrinks rewards; a higher one makes Zatrise a harder sell to teams.',
+      'Keep the share of every raise sent to zPool at 5%. A lower cut shrinks rewards; a higher one makes ZecPad a harder sell to teams.',
     start,
     end,
   },

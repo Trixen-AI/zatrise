@@ -1,4 +1,4 @@
-/* Zatrise design tokens. Warm near-black surfaces and one accent: zat gold.
+/* ZecPad design tokens. Warm near-black surfaces and one accent: zat gold.
    The same palette drives the site and the logo (scripts/build-brand.mjs). */
 :root {
   --bg: #15130f;

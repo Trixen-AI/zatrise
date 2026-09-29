@@ -120,7 +120,7 @@ export default function LaunchDetail() {
               <CardTitle>Token</CardTitle>
               <Row label="Name">{launch.tokenName}</Row>
               <Row label="Symbol">{launch.symbol}</Row>
-              <Row label="Standard">ERC-20, 18 decimals, deployed by Zatrise</Row>
+              <Row label="Standard">ERC-20, 18 decimals, deployed by ZecPad</Row>
               {launch.totalSupply !== undefined && (
                 <Row label="Total supply">
                   {fmtNumber(launch.totalSupply, 0)} {launch.symbol}

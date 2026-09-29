@@ -43,7 +43,7 @@ export default function DocsLayout() {
       <header className="sticky top-0 z-50 border-b border-white/10 bg-[rgba(21,19,15,0.85)] backdrop-blur-[8px]">
         <div className="mx-auto flex h-[64px] max-w-[1400px] items-center justify-between gap-[8px] px-[16px] sm:h-[72px] sm:px-[20px]">
           <div className="flex min-w-0 items-center gap-[10px] sm:gap-[16px]">
-            <Link to="/" aria-label="Zatrise home" className="shrink-0">
+            <Link to="/" aria-label="ZecPad home" className="shrink-0">
               <Logo height={26} className="sm:hidden" />
               <Logo height={32} className="hidden sm:block" />
             </Link>

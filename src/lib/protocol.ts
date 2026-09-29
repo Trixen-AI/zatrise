@@ -1,4 +1,4 @@
-// Zatrise genesis parameters. The docs and the dashboard both read from here,
+// ZecPad genesis parameters. The docs and the dashboard both read from here,
 // so a governance change only has to be made once.
 
 const DAY = 86_400;
